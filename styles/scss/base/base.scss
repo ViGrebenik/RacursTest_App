@@ -1,0 +1,22 @@
+@import 'vars.scss';
+@import 'reset.scss';
+// Компоненты
+@import '../blocks/modal.scss';
+@import '../blocks/form.scss';
+
+body {
+	font-family: $font-main;
+	background-color: $dark;
+	color: $white;
+	font-size: 16px;
+	background-image: url(../../../public/c72dc032ca38cd86202e9614e26577c0.png);
+}
+
+a {
+	color: $white;
+	transition: color 0.2s ease-in;
+
+	&:hover {
+		color: $accent;
+	}
+}

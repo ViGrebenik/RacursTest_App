@@ -1,0 +1,26 @@
+form {
+	margin: 20px;
+	padding: 20px;
+	border: 1px solid #ccc;
+}
+
+label {
+	display: block;
+	margin-bottom: 5px;
+	padding: 5px;
+}
+
+input,
+select {
+	width: 100%;
+	padding: 5px;
+	margin-bottom: 10px;
+}
+
+input[type='submit'] {
+	background-color: #007bff;
+	color: #fff;
+	border: none;
+	padding: 10px 20px;
+	cursor: pointer;
+}

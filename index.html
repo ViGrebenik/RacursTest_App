@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Racurs App</title>
+		<script src="https://code.iconify.design/3/3.1.0/iconify.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/inputmask"></script>
+		<link rel="stylesheet" href="styles/styles.css" />
+		<link rel="stylesheet" href="styles/normalize.css" />
+	</head>
+	<body>
+		<div class="modal">
+			<div class="modal__content">
+				<div class="modal__content--sidebar">
+					<div class="sidebar__product">
+						<div class="sidebar__product--blockLogo">
+							<img src="./public/logo_min.png" alt="logoCompany" />
+							<div class="blockLogo">
+								<div class="blockLogo--title">Автопоиск дублей 2.0</div>
+								<div class="blockLogo--subtitle">Разработчик: Racurs</div>
+							</div>
+						</div>
+						<div class="sidebar__product--blockAction">
+							<button href="#" class="button">Техническая поддержка</button>
+							<button href="#" class="button button--disabled">
+								Отключить
+							</button>
+						</div>
+					</div>
+					<div class="sidebar__grade">
+						<p>Нет оценок</p>
+						<button href="#" class="button">Оставьте отзыв</button>
+					</div>
+				</div>
+				<div class="modal__content--main">
+					<div class="main__content--header">
+						<div class="container__tab">
+							<div class="tab">Описание</div>
+							<div class="tab tab--disabled">Выданные доступы</div>
+						</div>
+					</div>
+					<div class="main__content--form">
+						<div class="content__title">Спасибо за установку!</div>
+						<div class="content__subtitle">Остался последний шаг</div>
+						<div class="form">
+							<div class="form__title">Активация тестового доступа</div>
+							<div class="container__form">
+								<div class="t1">
+									Для активации 14-дневного тестового доступа заполните форму
+									ниже.
+								</div>
+								<div class="t2">
+									<span>Внимание!</span> В целях безопасности обслуживание будет
+									осуществляться только по указанному номеру телефона.
+								</div>
+								<div class="select-box">
+									<div id="flag" class="selected-option">
+										<div class="flag">
+											<span class="iconify" data-icon="flag:ru-4x3"></span>
+											<strong>+7</strong>
+										</div>
+										<input
+											id="formTel"
+											type="tel"
+											name="tel"
+											placeholder="Введите номер телефона"
+										/>
+									</div>
+									<div class="options">
+										<input
+											type="text"
+											class="search-box"
+											placeholder="Поиск страны"
+										/>
+										<ol></ol>
+									</div>
+								</div>
+								<input
+									type="text"
+									id="formName"
+									name="name"
+									class="form__input"
+									placeholder="Введите ваше имя"
+									required
+								/>
+								<select id="role" name="role" class="form__select" required>
+									<option disabled selected>Выберите роль</option>
+								</select>
+
+								<div class="container__checkbox">
+									<label class="container">
+										<input
+											class="hidden-xs-up"
+											checked="checked"
+											type="checkbox"
+										/>
+										<div class="checkmark"></div>
+										<label>Хочу получить бесплатную помощь в настройке</label>
+									</label>
+									<div class="blockCheckBox">
+										<label class="container">
+											<input
+												class="hidden-xs-up"
+												type="checkbox"
+												id="promoCheckbox"
+											/>
+											<div class="checkmark"></div>
+											<label>У меня есть промокоде</label>
+										</label>
+
+										<input
+											type="text"
+											id="promoInput"
+											name="promoInput"
+											class="form__input form__input--promo"
+											placeholder="Введите промокод"
+											required
+										/>
+									</div>
+								</div>
+								<div class="container_actionButtonForm">
+									<button type="submit" class="form__submit-btn">
+										Отправить
+									</button>
+									<div class="form__question">
+										Есть вопросы ? <span>напише нам!</span>
+									</div>
+								</div>
+								<div id="errorMessage" class="error-message">
+									<img src="/public/Statuses.svg" alt="error" />
+									Пожалуйста, заполните все поля
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="main__content--footer">
+						<div class="containerTop">
+							<div class="">
+								<div class="footerTopItem">
+									<img
+										src="/public/mdi_information-variant-circle.svg"
+										alt="infoIcon"
+									/>
+									<div class="footerTopItem--title">
+										Получите бесплатную консультацию — свяжитесь с нами удобным
+										образом:
+									</div>
+								</div>
+								<div class="footerTopItem">
+									<img src="/public/phone.svg" alt="infoIcon" />
+									<div class="footerTopItem--title">+7 (921) 437-78-86</div>
+								</div>
+							</div>
+							<div class="footerTopItem">
+								<img src="/public/social-vk-monochrome.svg" alt="infoIcon" />
+								<img
+									src="/public/social-whatsapp-outline-monochrome.svg"
+									alt="infoIcon"
+								/>
+								<img
+									src="/public/social-telegram-filled-colorful.svg"
+									alt="infoIcon"
+								/>
+							</div>
+						</div>
+						<div class="containerBottom">
+							<div class="footerBottomItem">Все виджеты Rakurs</div>
+							<div class="footerBottomItem">Инструкция к виджету</div>
+							<div class="footerBottomItem">Восстановить доступ</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<script src="/script.js"></script>
+	</body>
+</html>

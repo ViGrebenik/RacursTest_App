@@ -1,0 +1,17 @@
+{
+	"name": "racursapp",
+	"version": "1.0.0",
+	"description": "",
+	"main": "script.js",
+	"scripts": {
+		"sass": "node-sass styles/scss/base/base.scss styles/styles.css --watch",
+		"format": "prettier --write \"**/*.{js,html,scss}\""
+	},
+	"keywords": [],
+	"author": "",
+	"license": "ISC",
+	"devDependencies": {
+		"node-sass": "^9.0.0",
+		"prettier": "^3.2.5"
+	}
+}
